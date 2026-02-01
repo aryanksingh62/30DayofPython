@@ -1,1 +1,4 @@
 # 30DayofPython
+git add .
+git commit -m"file add"
+git push -->
