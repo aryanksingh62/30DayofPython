@@ -20,6 +20,7 @@ def convert(data,output_file):
     fieldname=list(data[0].keys())
     with open(output_file,"w",newline="",encoding="utf-8") as f:
         writer=csv.DictWriter(f,fieldnames=fieldname)
+        writer.writeheader()
         for record in data:
             writer.writerow(record)
 
